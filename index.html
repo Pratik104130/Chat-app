@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Clone - Everyone & Secret Groups</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-database-compat.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+<div class="chat-box">
+  <div class="header"><span id="groupIndicator" class="group-indicator"></span>
+    <span class="online-status" id="onlineStatus">Offline</span>
+    <div class="header-buttons" id="headerButtons"></div>
+  </div>
+
+  <div id="loginContainer">
+    <input type="email" id="emailInput" placeholder="Enter your email" />
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <div class="typing-indicator" id="typingIndicator"></div>
+  <div class="messages" id="messages"></div>
+
+  <div class="input-area" id="inputArea" style="display:none;">
+    <input id="messageInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <div class="bottom-buttons" id="bottomButtons" style="display:none;">
+    <button onclick="clearAllForMe()">🧹 Clear My Chat</button>
+    <button id="exitGroupBtn" style="display:none;" onclick="exitGroup()">❌ Exit Group</button>
+    <button id="logout" onclick="logout()">🚪 Logout</button>
+  </div>
+</div>
+
+<script src="main.js">
+
+</script>
+</body>
+</html>
