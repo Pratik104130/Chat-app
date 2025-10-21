@@ -42,7 +42,12 @@ body {
 .input-area{display:flex;background:#202c33;padding:10px;box-shadow:0 -2px 5px rgba(0,0,0,0.3);border-top:1px solid #333;border-radius:0 0 15px 15px;}
 input{flex:1;padding:10px;border:none;border-radius:20px;outline:none;background:#2a3942;color:white;box-shadow:inset 0 1px 3px rgba(0,0,0,0.3);}
 button{background:#005c4b;color:white;border:none;border-radius:20px;padding:10px 12px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.3);}
-#loginContainer{width:100%;padding:20px;display:flex;flex-direction:column;gap:10px;}
+#loginContainer{
+  width:90%;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;}
 
 .bottom-buttons{
   display:flex;
